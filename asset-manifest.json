@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/alumniconnect/static/css/main.38e15fbb.css",
+    "main.js": "/alumniconnect/static/js/main.bab6c97c.js",
+    "static/media/a.jpg": "/alumniconnect/static/media/a.b4b4fb6d948026c6ed7f.jpg",
+    "static/media/memory3.png": "/alumniconnect/static/media/memory3.764e2b890e8506c1229a.png",
+    "static/media/memory2.png": "/alumniconnect/static/media/memory2.eda4a949533614c5409b.png",
+    "static/media/memory1.png": "/alumniconnect/static/media/memory1.51654bf6e86d596eddff.png",
+    "static/media/memory5.png": "/alumniconnect/static/media/memory5.106f6e07815820891e31.png",
+    "static/media/memory4.png": "/alumniconnect/static/media/memory4.18372092511d5d5e991e.png",
+    "static/media/login-bg.jpg": "/alumniconnect/static/media/login-bg.9176551daf77401613d1.jpg",
+    "static/media/home-bg.jpg": "/alumniconnect/static/media/home-bg.5ce7d1e10256af4a4f59.jpg",
+    "static/media/memory6.png": "/alumniconnect/static/media/memory6.1b5170490a1d35a79882.png",
+    "index.html": "/alumniconnect/index.html",
+    "static/media/favicon.svg": "/alumniconnect/static/media/favicon.6aa85c56fbbaea5af8f9ebcc81b9e2a1.svg",
+    "static/media/wave.svg": "/alumniconnect/static/media/wave.6c6ec9936c993e8526fb1de89e37e406.svg",
+    "main.38e15fbb.css.map": "/alumniconnect/static/css/main.38e15fbb.css.map",
+    "main.bab6c97c.js.map": "/alumniconnect/static/js/main.bab6c97c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38e15fbb.css",
+    "static/js/main.bab6c97c.js"
+  ]
+}
