@@ -1,0 +1,293 @@
+.post {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5rem;
+  border: 1px solid #ffe6f1;
+  /* Light baby pink border */
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+  background-color: #ffffff;
+  /* White background for the post */
+  box-shadow: 3px 3px 8px #f4c2d9, -3px -3px 8px #fff6fb;
+  /* Subtle pink shadow for depth */
+}
+
+/* Dark Mode Styling for Post */
+body.dark .post {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5rem;
+  border: 1px solid #444444;
+  /* Dark border for the post */
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+  background-color: #1e1e1e;
+  /* Dark background for the post */
+  box-shadow: 3px 3px 8px #333333, -3px -3px 8px #121212;
+  /* Darker shadow for depth */
+}
+
+body.dark .post-box {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+  /* Darker background for post content */
+}
+
+body.dark .post-author {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid #555555;
+  /* Darker divider */
+}
+
+body.dark .post-author-image {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.dark .post-author-image img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 500px;
+  border: 2px solid #ff66cc;
+  /* Light pink border around the image */
+}
+
+body.dark .post-author-details {
+  width: calc(100% - 4.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  color: #e0e0e0;
+  /* Light text for author details */
+}
+
+body.dark .post-author-details span,
+body.dark .post-author-details a {
+  padding: 0 0.5rem;
+}
+
+body.dark .post-author-details span:first-child,
+body.dark .post-author-details a:first-child {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+body.dark .post-author-details span:last-child,
+body.dark .post-author-details a:last-child {
+  font-size: 0.875rem;
+  color: #b3b3b3;
+  /* Muted gray for less prominent text */
+}
+
+body.dark .post-author-details a:hover {
+  text-decoration: underline;
+  color: #ff66cc;
+  /* Bright pink on hover for links */
+}
+
+body.dark .post-content {
+  padding: 0.25rem;
+  color: #f0f0f0;
+  /* Light text for post content */
+  background-color: #2a2a2a;
+  /* Darker background for content */
+  border-radius: 5px;
+}
+
+body.dark .post-stats {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-bottom: 0.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+body.dark .post-stats button {
+  min-width: 3rem;
+  margin: 0 0.5rem 0 0.25rem;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #444444;
+  /* Dark button background */
+  border: 1px solid #666666;
+  /* Subtle dark border */
+  border-radius: 5px;
+  color: #f0f0f0;
+  /* Light button text */
+  transition: all 0.2s ease-in-out;
+}
+
+body.dark .post-stats button:hover {
+  background-color: #555555;
+  /* Slightly lighter dark gray on hover */
+  box-shadow: 2px 2px 5px #333333, -2px -2px 5px #121212;
+  /* Subtle shadow effect */
+}
+
+body.dark .post-stats button .material-icons {
+  font-size: 1.25rem;
+  margin-right: 0.25rem;
+}
+
+body.dark .post-stats button:last-child {
+  color: #007bff;
+  /* Blue for like/share button */
+}
+
+body.dark .post-stats button:first-child {
+  color: #ff1744;
+  /* Bright red for dislike/delete button */
+}
+
+.post-box {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fceded;
+  /* Very light pink for post content background */
+}
+
+.post-author {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid #a37a8c;
+  /* Soft pink divider */
+}
+
+.post-author-image {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-author-image img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 500px;
+  border: 2px solid #ff4596;
+  /* Pink border around author image */
+}
+
+.post-author-details {
+  width: calc(100% - 4.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  color: #51182d;
+  /* Dark rose text for author details */
+}
+
+.post-author-details span,
+.post-author-details a {
+  padding: 0 0.5rem;
+}
+
+.post-author-details span:first-child,
+.post-author-details a:first-child {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.post-author-details span:last-child,
+.post-author-details a:last-child {
+  font-size: 0.875rem;
+  color: #77344a;
+  /* Muted rose for less prominent text */
+}
+
+.post-author-details a:hover {
+  text-decoration: underline;
+  color: #e91e63;
+  /* Bright pink on hover for links */
+}
+
+.post-content {
+  padding: 0.25rem;
+  color: #4a1c2c;
+  /* Deep rose for post content text */
+  background-color: #ffffff;
+  /* Very light pink background */
+  border-radius: 5px;
+}
+
+.post-stats {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-bottom: 0.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post-stats button {
+  min-width: 3rem;
+  margin: 0 0.5rem 0 0.25rem;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff1f0;
+  /* Baby pink button background */
+  border: 1px solid #7b7b7b;
+  /* Soft pink border */
+  border-radius: 5px;
+  color: #7a2c48;
+  /* Dark rose for button text */
+  transition: all 0.2s ease-in-out;
+}
+
+.post-stats button:hover {
+  background-color: #ffdaea;
+  /* Slightly darker pink on hover */
+  box-shadow: 2px 2px 5px #f4c2d9, -2px -2px 5px #fff6fb;
+}
+
+.post-stats button .material-icons {
+  font-size: 1.25rem;
+  margin-right: 0.25rem;
+}
+
+.post-stats button:last-child {
+  color: #007bff;
+  /* Blue for a like/share button */
+}
+
+.post-stats button:first-child {
+  color: #ff1744;
+  /* Bright red for a dislike/delete button */
+}

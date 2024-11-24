@@ -1,0 +1,219 @@
+/* Popup Styles */
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 182, 193, 0.6);
+  /* Light pink with transparency */
+}
+
+/* Popup Box */
+.popup-box {
+  width: 60%;
+  height: 60%;
+  border-radius: 12px;
+  /* Slightly round corners */
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  /* Soft shadow for the popup */
+  background-color: white;
+  /* White background for the popup box */
+}
+
+/* Popup Header */
+.popup-head {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff69b4;
+  /* Baby pink header background */
+  position: relative;
+  color: white;
+  /* Text color white */
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.popup-head button {
+  position: absolute;
+  left: calc(100% - 2.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.popup-head button:hover {
+  transform: rotate(90deg);
+  /* Add a rotate effect on hover */
+}
+
+/* Title inside the Popup Header */
+.popup-head-title {
+  line-height: 2.5rem;
+}
+
+/* Popup Body */
+.popup-body {
+  width: 100%;
+  height: calc(100% - 3rem);
+  /* Subtract header height */
+  background-color: #fff0f5;
+  /* Baby pink background */
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Add soft scroll effect to popup body */
+.popup-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popup-body::-webkit-scrollbar-thumb {
+  background-color: #ff69b4;
+  /* Pink thumb */
+  border-radius: 4px;
+}
+
+.popup-body::-webkit-scrollbar-track {
+  background: #fff;
+  /* Light background for the scrollbar track */
+}
+
+/* Optional: Add a fade effect for popup appearance */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.popup-box {
+  animation: fadeIn 0.3s ease-out;
+}
+/* Dark Mode Popup Styles */
+body.dark .popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Dark semi-transparent background */
+}
+
+/* Popup Box */
+body.dark .popup-box {
+  width: 60%;
+  height: 60%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  /* Darker shadow */
+  background-color: #333333;
+  /* Dark background for the popup box */
+}
+
+/* Popup Header */
+body.dark .popup-head {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff1493;
+  /* Dark pink header background */
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+body.dark .popup-head button {
+  position: absolute;
+  left: calc(100% - 2.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+body.dark .popup-head button:hover {
+  transform: rotate(90deg);
+}
+
+/* Title inside the Popup Header */
+body.dark .popup-head-title {
+  line-height: 2.5rem;
+}
+
+/* Popup Body */
+body.dark .popup-body {
+  width: 100%;
+  height: calc(100% - 3rem);
+  background-color: #222222;
+  /* Darker background for the body */
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #f0f0f0;
+  /* Light text color */
+}
+
+/* Add soft scroll effect to popup body */
+body.dark .popup-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body.dark .popup-body::-webkit-scrollbar-thumb {
+  background-color: #ff1493;
+  /* Darker pink thumb */
+  border-radius: 4px;
+}
+
+body.dark .popup-body::-webkit-scrollbar-track {
+  background: #333333;
+  /* Dark background for the scrollbar track */
+}
+
+/* Optional: Add a fade effect for popup appearance */
+body.dark .popup-box {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
