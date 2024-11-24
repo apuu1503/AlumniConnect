@@ -1,0 +1,157 @@
+.dashboard {
+  width: 100%;
+}
+
+.dashboard-head {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.dashboard-write {
+  width: 100%;
+  height: 5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffe6f1;
+  /* Light baby pink background */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  /* Slightly rounded corners */
+  border: 1px solid #ffc2d9;
+  /* Subtle border for definition */
+}
+
+.dashboard-write-avatar {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+.dashboard-write-avatar img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  /* Circular avatar */
+  border: 2px solid #ff99bb;
+  /* Baby pink border for emphasis */
+}
+/* Dark Mode Styling for Dashboard */
+body.dark .dashboard {
+  width: 100%;
+  background-color: #121212;
+  /* Dark background for the whole dashboard */
+}
+
+body.dark .dashboard-head {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+body.dark .dashboard-write {
+  width: 100%;
+  height: 5rem;
+  padding: 0.5rem 1rem;
+  background-color: #333333;
+  /* Darker pinkish background */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #444444;
+  /* Darker border for definition */
+}
+
+body.dark .dashboard-write-avatar {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+body.dark .dashboard-write-avatar img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  border: 2px solid #ff66cc;
+  /* Light pink border for avatar emphasis */
+}
+
+body.dark .dashboard-write-block {
+  width: calc(100% - 4.5rem);
+  height: 87.5%;
+  margin: 0 0.5rem;
+  padding: 0 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: text;
+  background-color: #444444;
+  /* Darker background for input area */
+  color: #e0e0e0;
+  /* Light text for good readability */
+  font-size: 1rem;
+  border: 1px solid #666666;
+  /* Subtle dark border */
+}
+
+body.dark .dashboard-write-block:hover {
+  background-color: #555555;
+  /* Slightly lighter dark gray on hover */
+}
+
+body.dark .dashboard-write-block span {
+  color: #d8a7b1;
+  /* Muted pink for placeholder text */
+}
+
+body.dark .dashboard-write-block:focus-within {
+  background-color: #333333;
+  /* Darker background when focused */
+  border: 1px solid #ff66cc;
+  /* Highlight border with vibrant pink */
+  box-shadow: 0 0 5px rgba(255, 111, 169, 0.5);
+  /* Soft pink glow */
+}
+
+.dashboard-write-block {
+  width: calc(100% - 4.5rem);
+  height: 87.5%;
+  margin: 0 0.5rem;
+  padding: 0 1rem;
+  border-radius: 8px;
+  /* Match the parent element */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: text;
+  background-color: #ffeef8;
+  /* Slightly lighter pink for input area */
+  color: #7a2c48;
+  /* Dark rose text for good readability */
+  font-size: 1rem;
+  /* Maintain readability */
+  border: 1px solid #ffc2d9;
+  /* Subtle border */
+}
+
+.dashboard-write-block:hover {
+  background-color: #ffd6e8;
+  /* Slightly darker pink on hover */
+}
+
+.dashboard-write-block span {
+  color: #a3526d;
+  /* Muted rose text for placeholder */
+}
+
+.dashboard-write-block:focus-within {
+  background-color: #ffffff;
+  /* White background when focused */
+  border: 1px solid #ff6fa9;
+  /* Highlight border with vibrant pink */
+  box-shadow: 0 0 5px rgba(255, 111, 169, 0.5);
+  /* Subtle pink glow */
+}

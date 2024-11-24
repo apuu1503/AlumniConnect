@@ -1,0 +1,231 @@
+.navigation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+  border-radius: var(--neu-border-radius);
+  background: #fff6fa;
+  /* Light baby pink background */
+  box-shadow: 12px 12px 24px #f4c2d9, -12px -12px 24px #fff6fb;
+  /* Soft pink shadows */
+}
+
+/* Dark Mode Styling */
+body.dark .navigation {
+  background: #1e1e1e;
+  /* Dark background for the navigation */
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.2), -12px -12px 24px rgba(255, 255, 255, 0.1);
+  /* Subtle shadow for a darker look */
+}
+
+body.dark .navigation-container {
+  background: transparent;
+  box-shadow: none;
+}
+
+body.dark .navigation-pane {
+  background-color: #333333;
+  /* Dark gray background */
+  color: #e0e0e0;
+  /* Light gray text */
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.4), -12px -12px 24px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .navigation-head {
+  background-color: #444444;
+  /* Slightly darker gray for header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Dark shadow for the header */
+}
+
+body.dark .navigation-cover {
+  background-color: #444444;
+  /* Matching background color */
+}
+
+body.dark .navigation-body {
+  background-color: #333333;
+  /* Dark gray for the body */
+}
+
+body.dark .navigation-nav {
+  background-color: #333333;
+  /* Dark gray for navigation container */
+}
+
+body.dark .navigation-nav-ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+body.dark .navigation-nav-li {
+  padding: 0.75rem 0;
+}
+
+body.dark .navigation-nav-li a {
+  display: flex;
+  color: #e0e0e0;
+  /* Light text color */
+  text-decoration: none;
+}
+
+body.dark .navigation-nav-li__icon,
+body.dark .navigation-nav-li__text {
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555555;
+  /* Darker background for icons */
+  transition: all var(--transition-time) ease-in-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .navigation-nav-li:hover a>* {
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.4);
+  background-color: #666666;
+  /* Slightly brighter background on hover */
+}
+
+body.dark .navigation-nav-li:active a>*,
+body.dark .navigation-nav-li:focus a>* {
+  background-color: #444444;
+  /* Slightly darker gray when active or focused */
+}
+
+body.dark .navigation-nav-li__text {
+  padding: 0.25rem 1rem;
+  margin: 0 0.5rem;
+  justify-content: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #c0c0c0;
+  /* Lighter gray text for the nav items */
+}
+
+.navigation-container {
+  width: var(--side-width);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: transparent;
+  padding: 1rem;
+}
+
+.navigation-pane {
+  width: var(--side-width);
+  height: 100%;
+  background-color: #ffeef8;
+  /* Lighter pink for the navigation pane */
+  color: #7a2c48;
+  /* Dark rose for text */
+  box-shadow: 12px 12px 24px #f3c2d7, -12px -12px 24px #fff0f6;
+  /* Subtle pink shadows */
+}
+
+.navigation-head {
+  width: 100%;
+  height: var(--head-height);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #ffd6e8;
+  /* Soft pink for the navigation header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for separation */
+}
+
+.navigation-cover {
+  width: calc(100% - var(--side-width));
+  height: 100%;
+  background-color: #ffeef8;
+  /* Matching background for cover */
+}
+
+.navigation-body {
+  width: 100%;
+  height: calc(100vh - var(--head-height));
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.navigation-nav {
+  width: 90%;
+  height: 100%;
+}
+
+.navigation-nav-ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.navigation-nav-li {
+  padding: 0.75rem 0;
+}
+
+.navigation-nav-li a {
+  display: flex;
+  color: #7a2c48;
+  /* Dark rose for active links */
+  text-decoration: none;
+}
+
+.navigation-nav-li__icon,
+.navigation-nav-li__text {
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffeef8;
+  /* Baby pink background for icons */
+  transition: all var(--transition-time) ease-in-out;
+  box-shadow: 5px 5px 10px #f4c2d9, -5px -5px 10px #fff6fb;
+  /* Soft pink shadows */
+}
+
+.navigation-nav-li:hover a>* {
+  box-shadow: 1px 1px 5px #f3c2d7, 0px 0px 5px #ffeef8;
+  /* Hover effect with subtle glow */
+}
+
+.navigation-nav-li:active a>*,
+.navigation-nav-li:focus a>* {
+  background-color: #fff0f6;
+  /* Slightly darker pink on active or focus */
+}
+
+.navigation-nav-li__text {
+  padding: 0.25rem 1rem;
+  margin: 0 0.5rem;
+  justify-content: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #a3526d;
+  /* Muted rose text */
+}

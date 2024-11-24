@@ -1,0 +1,139 @@
+/* General Styling */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+/* Light Mode (Default) */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+/* Common style for each section */
+.images-container section {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for images */
+.images-container section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for individual sections */
+.a {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.b {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.c {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.d {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.e {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.f {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark h1 {
+    color: #e0e0e0;
+}
+
+.images-container {
+    gap: 20px;
+}
+
+.images-container section {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Darker background for images in dark mode */
+}
+
+.images-container section:hover {
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+    /* Lighter shadow for hover in dark mode */
+}
+
+.images-container section {
+    border-radius: 10px;
+}
+
+.a {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Darker fallback background */
+}
+
+.b {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Darker fallback background */
+}
+
+.c {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Darker fallback background */
+}
+
+.d {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Darker fallback background */
+}
+
+.e {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Darker fallback background */
+}
+
+.f {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Darker fallback background */
+}
+
+/* Light Mode -> Dark Mode Toggle Button (Optional) */
+.theme-toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #0056b3;
+}
